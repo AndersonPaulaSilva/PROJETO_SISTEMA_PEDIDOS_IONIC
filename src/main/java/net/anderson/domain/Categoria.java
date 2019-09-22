@@ -1,6 +1,7 @@
 package net.anderson.domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Created by Anderson on 07/09/2019.
@@ -8,7 +9,7 @@ import java.io.Serializable;
 public class Categoria implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private int id;
+    private Integer id;
     private String nome;
 
     public Categoria() {
@@ -44,7 +45,7 @@ public class Categoria implements Serializable {
         Categoria categoria = (Categoria) o;
 
         if (id == categoria.id)
-            if (!(nome != null ? !nome.equals(categoria.nome) : categoria.nome != null)) return true;
+            if (!(!Objects.equals(nome, categoria.nome))) return true;
         return false;
 
     }

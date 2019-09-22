@@ -21,11 +21,21 @@ public class CategoriaResource {
 
         Categoria categoria1 = new Categoria(1,"INFORMATICA");
         Categoria categoria2 = new Categoria(2,"ESCRITORIO");
+        Categoria categoria3 = new Categoria(3,"FARMACIA");
+        Categoria categoria4 = new Categoria(4,"FACULDADE");
+        Categoria categoria5 = new Categoria(5,"MERCADO");
+        Categoria categoria6 = new Categoria(6,"LOJA");
+
 
         List<Categoria> lista = new ArrayList<>();
 
         lista.add(categoria1);
         lista.add(categoria2);
+        lista.add(categoria3);
+        lista.add(categoria4);
+        lista.add(categoria5);
+        lista.add(categoria6);
+
 
         return lista;
     }
